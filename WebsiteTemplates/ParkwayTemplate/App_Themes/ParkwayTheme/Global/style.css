@@ -192,83 +192,8 @@ a.st-ui-result .st-ui-type-heading {font-size:16px;}
 
 /* Chatbox */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-input::placeholder {
-  color: #595a5c;
-}
-#keyreply-container {
-  font-family: 'Open Sans', sans-serif;
-  position: absolute;
-}
-.keyreply-launcher {
-  border-radius: 0 !important;
-  background-size: 100% !important;
-  height: 82px !important;
-  box-shadow: none !important;
-}
-#keyreply-chat-window #keyreply-panel-header {
-  color: #595a5c !important;
-  font-weight: bold !important;
-  font-size: 20px !important;
-}
-#keyreply-panel-header [class*=" el-icon-"],
-#keyreply-panel-header [class^="el-icon-"] {
-  font-size: 20px;
-}
-.el-input-group__append button.el-button {
-  font-weight: 600;
-  color: white;
-  font-size: 15px;
-}
-.el-input__inner {
-  font-weight: 600;
-  font-size: 15px;
-}
-.el-input__inner:focus {
-  border-radius: 4px;
-}
-.el-input__inner::-moz-placeholder,
-.el-input__inner::-webkit-input-placeholder
-  {
-  color: #595a5c;
-}
-.el-button--primary.is-plain {
-  color: white;
-  font-size: 12px;
-}
-.el-button--primary.is-plain:focus,
-.el-button--primary.is-plain:hover {
-  background-color: #595a5c;
-  border-color: #595a5c;
-}
-.el-input__inner {
-  background-color: #ececed;
-}
-.keyreply-bubble:before {
-  content: none;
-}
-.keyreply-message p {
-  font-size: 14px;
-  line-height: 1.3;
-}
-@media only screen and (max-width: 768px) {
-  .keyreply-message p {
-    font-size: 15px;
-  }
-  .keyreply-launcher {
-    bottom: 86px !important;
-  }
-}
-.el-input-group__append button.el-button {
-  background-color: #b3a980;
-}
-.el-input__inner:focus {
-  border-color: #b3a980;
-}
-.el-button--primary.is-plain {
-  background-color: #b3a980;
-  border-color: #b3a980;
-  color: white;
-}
+@import url('https://keyreplyparkwayprod.blob.core.windows.net/files/css/parkway-parkway-east.css?st=2018-12-04T03%3A21%3A08Z&se=2099-12-05T03%3A21%3A00Z&sp=rl&sv=2018-03-28&sr=b&sig=2Fj2MO9mcSnZKu6xTRlvMxeozxIMdeq%2BchJtKW8SdWw%3D');
+
 /* Sitemap */
 .nav.nav-sitemap {}
 .nav.nav-sitemap > li{margin-bottom:50px;}

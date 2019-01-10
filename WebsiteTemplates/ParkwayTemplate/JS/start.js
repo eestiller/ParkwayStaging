@@ -682,37 +682,24 @@ $(window).load(function(){
 	var lang = $('html').attr('lang');
 	
 	if(lang == 'en'){
-		//$.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
-		//$.getScript('https://files.keyreply.com/demo/static/js/app.js');
 		
-		// window.kr_settings = {
-		//   initialState: {
-		// 	hospital: 'MEH_MNH',
-		// 	hospitalRoot: 'https://www.mountelizabeth.com.sg',
-		// 	hospitalName: 'Mount Elizabeth Hospital',
-		//   },
-		//   id: "25406c0954",
-		//   logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
-		//   botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/mt-elizabeth.svg",
-		//   headerBorderColor: "#b3a980",
-		//   agentBubbleColor: "#fff",
-		//   agentTextColor: "#595a5c",
-		//   userBubbleColor: "#e0dbca"
-        // }    
         $.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
         $.getScript('https://files.keyreply.com/live/static/js/app.js');
-        window.kr_settings = {
-            initialState: {
-              hospital: 'MEH_MNH',
-              hospitalRoot: 'https://www.mountelizabeth.com.sg',
-              hospitalName: 'Mount Elizabeth Hospital',
-            },
-            id: "25406c0954",
-            botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/mt-elizabeth.svg",
-            headerBorderColor: "#b3a980",
-            agentBubbleColor: "#fff",
-            agentTextColor: "#595a5c",
-            userBubbleColor: "#e0dbca"
-          }     
+		
+        varkr_settings = {
+		  "server": "https://keyreply-parkway.azurewebsites.net",
+		initialState: {
+				hospital: 'MEH_MNH',
+		hospitalRoot: 'https://www.mountelizabeth.com.sg',
+		hospitalName: 'Mount Elizabeth Hospital',
+			  },
+			  id: "25406c0954",
+			  logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
+		botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/mt-elizabeth.svg",
+		headerBorderColor: "#b3a980",
+		agentBubbleColor: "#fff",
+		agentTextColor: "#595a5c",
+		userBubbleColor: "#e0dbca"
+		};
 	}
 })
