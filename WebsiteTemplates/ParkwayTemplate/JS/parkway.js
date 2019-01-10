@@ -1,0 +1,1 @@
+function searchByGoogle(t){var e=$("#"+t).val();window.open(window.location.origin+"/search-results#"+e,"_blank")}
