@@ -235,7 +235,7 @@ function showPopup() {
         autoResize: !0,
         maxWidth: 1e3,
         tpl: {
-            closeBtn: '<a class="fancybox-item fancybox-close">Proceed to Site</a>'
+            closeBtn: '<a class="fancybox-item fancybox-close">&times;</a>'
         },
         afterLoad: function() {
             setTimeout(function() {
@@ -678,28 +678,28 @@ $(document).ready(function(){
 });
 
 /* Chatbox script */
+var kr_settings = {
+  "server": "https://keyreply-parkway.azurewebsites.net",
+initialState: {
+		hospital: 'MEH_MNH',
+hospitalRoot: 'https://www.mountelizabeth.com.sg',
+hospitalName: 'Mount Elizabeth Hospital',
+	  },
+	  id: "25406c0954",
+	  logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
+botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/mt-elizabeth.svg",
+headerBorderColor: "#b3a980",
+agentBubbleColor: "#fff",
+agentTextColor: "#595a5c",
+userBubbleColor: "#e0dbca"
+};
 $(window).load(function(){
+
 	var lang = $('html').attr('lang');
 	
 	if(lang == 'en'){
-		
         $.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
-        $.getScript('https://files.keyreply.com/live/static/js/app.js');
-		
-        varkr_settings = {
-		  "server": "https://keyreply-parkway.azurewebsites.net",
-		initialState: {
-				hospital: 'MEH_MNH',
-		hospitalRoot: 'https://www.mountelizabeth.com.sg',
-		hospitalName: 'Mount Elizabeth Hospital',
-			  },
-			  id: "25406c0954",
-			  logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
-		botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/mt-elizabeth.svg",
-		headerBorderColor: "#b3a980",
-		agentBubbleColor: "#fff",
-		agentTextColor: "#595a5c",
-		userBubbleColor: "#e0dbca"
-		};
+		$.getScript('https://files.keyreply.com/live/static/js/app.js');
+
 	}
 })

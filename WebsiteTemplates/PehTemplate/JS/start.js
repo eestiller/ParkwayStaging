@@ -678,43 +678,31 @@ $(document).ready(function(){
 });
 
 /* Chatbox script */
+var kr_settings = {
+  "server": "https://keyreply-parkway.azurewebsites.net",
+initialState: {
+      hospital: 'PEH',
+hospitalRoot: 'https://www.parkwayeast.com.sg',
+hospitalName: 'Parkway East Hospital',
+    },
+    id: "25406c0954",
+    logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
+botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/parkway-east.svg",
+headerBorderColor: "#f79021",
+agentBubbleColor: "#fff",
+agentTextColor: "#595a5c",
+userBubbleColor: "#fed4a9",
+};
+
 $(window).load(function(){
+
 	var lang = $('html').attr('lang');
 	
 	if(lang == 'en'){
-		$.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
+        $.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
 		$.getScript('https://files.keyreply.com/live/static/js/app.js');
-		
-		// window.kr_settings = {
-		// 	initialState: {
-		// 	  hospital: 'PEH',
-		// 	  hospitalRoot: 'https://www.parkwayeast.com.sg',
-		// 	  hospitalName: 'Parkway East Hospital',
-		// 	},
-		// 	id: "25406c0954",
-		// 	logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
-		// 	botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/parkway-east.svg",
-		// 	headerBorderColor: "#f79021",
-		// 	agentBubbleColor: "#fff",
-		// 	agentTextColor: "#595a5c",
-		// 	userBubbleColor: "#fed4a9"
-        // }
-        window.kr_settings = {
-            initialState: {
-              hospital: 'PEH',
-              hospitalRoot: 'https://www.parkwayeast.com.sg',
-              hospitalName: 'Parkway East Hospital',
-            },
-            id: "25406c0954",
-            logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
-            botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/parkway-east.svg",
-            headerBorderColor: "#f79021",
-            agentBubbleColor: "#fff",
-            agentTextColor: "#595a5c",
-            userBubbleColor: "#fed4a9"
-          }   
+
 	}
-	
 })
 
 

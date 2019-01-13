@@ -569,40 +569,29 @@ $(document).ready(function(){
 });
 
 /* Chatbox script */
+var kr_settings = {
+  "server": "https://keyreply-parkway.azurewebsites.net",
+initialState: {
+      hospital: 'GEH',
+hospitalRoot: 'https://www.gleneagles.com.sg',
+hospitalName: 'Gleneagles Hospital',
+    },
+    id: "25406c0954",
+botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/gleneagles.svg",
+headerBorderColor: "#648bc8",
+agentBubbleColor: "#fff",
+agentTextColor: "#595a5c",
+userBubbleColor: "#c2cee9",
+};
+
+
 $(window).load(function(){
+
 	var lang = $('html').attr('lang');
 	
 	if(lang == 'en'){
-		$.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
+        $.getScript('https://cdn.polyfill.io/v2/polyfill.min.js');
 		$.getScript('https://files.keyreply.com/live/static/js/app.js');
-		
-		// window.kr_settings = {
-		// 	initialState: {
-		// 	  hospital: 'GEH',
-		// 	  hospitalRoot: 'https://www.gleneagles.com.sg',
-		// 	  hospitalName: 'Gleneagles Hospital',
-		// 	},
-		// 	id: "25406c0954",
-		// 	logo: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/pam-icon.svg",
-		// 	botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/gleneagles.svg",
-		// 	headerBorderColor: "#648bc8",
-		// 	agentBubbleColor: "#fff",
-		// 	agentTextColor: "#595a5c",
-		// 	userBubbleColor: "#c2cee9"
-        // }
-        
-        window.kr_settings = {
-            initialState: {
-              hospital: 'GEH',
-              hospitalRoot: 'https://www.gleneagles.com.sg',
-              hospitalName: 'Gleneagles Hospital',
-            },
-            id: "25406c0954",
-            botIcon: "https://keyreplyparkwayprod.blob.core.windows.net/files/images/gleneagles.svg",
-            headerBorderColor: "#648bc8",
-            agentBubbleColor: "#fff",
-            agentTextColor: "#595a5c",
-            userBubbleColor: "#c2cee9",
-          }  
+
 	}
 })
