@@ -216,7 +216,7 @@ function showPopup() {
         autoResize: !0,
         maxWidth: 1e3,
         tpl: {
-            closeBtn: '<a class="fancybox-item fancybox-close">Proceed to Site</a>'
+            closeBtn: '<a class="fancybox-item fancybox-close">&times;</a>'
         },
         afterLoad: function() {
             setTimeout(function() {

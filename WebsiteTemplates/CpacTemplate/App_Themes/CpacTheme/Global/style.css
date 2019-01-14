@@ -166,3 +166,13 @@ section#formEService .k-textbox.k-invalid:before {content:"\e403";width:15px;hei
     margin-left: .5% !important;
     margin-right: .5% !important;
 }
+
+
+/* Popup Banner Enhancement */
+.popup-banner .fancybox-outer {padding-top:25px}
+.popup-banner a.fancybox-close {bottom:auto !important;top:-15px;right:0 !important;left:auto;font-size:40px;text-decoration:none;width:24px;height:40px;color:#FFF;text-align:center;}
+.popup-banner .fancybox-close:hover {color:#DDD}
+
+@media screen and (min-width: 320px) and (orientation: landscape) {
+	.popup-banner .fancybox-close {bottom:auto !important;}
+}

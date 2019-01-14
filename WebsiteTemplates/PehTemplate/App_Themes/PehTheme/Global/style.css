@@ -153,8 +153,6 @@ section#formEService .k-textbox.k-invalid:before {content:"\e403";width:15px;hei
 	.formMEP #ddl_Purpose > span {padding:7px 29px}
 }
 
-
-
 /* Specific styling for hospitals */
 .el-input-group__append button.el-button {
   background-color: #f79021;
@@ -168,7 +166,6 @@ section#formEService .k-textbox.k-invalid:before {content:"\e403";width:15px;hei
   color: white;
 }
 
-
 /* Sitemap */
 .nav.nav-sitemap {}
 .nav.nav-sitemap > li{margin-bottom:50px;}
@@ -177,7 +174,14 @@ section#formEService .k-textbox.k-invalid:before {content:"\e403";width:15px;hei
 .nav.nav-sitemap > li > ul li{}
 .nav.nav-sitemap > li > ul li a {font-size:1.125em;color:#333;background:url(../images/dot-2.png) no-repeat left center;padding:10px 10px 10px 16px;}
 
-
 /* 5 Star rating removal */
 #collapseSharedArticle article ul > li .content-article .rate {display:none}
 #collapseSharedArticle article ul > li .content-article .number {display:none}
+
+/* Popup Banner Enhancement */
+.popup-banner .fancybox-outer {padding-top:25px}
+.popup-banner a.fancybox-close {bottom:auto !important;top:-15px;right:0 !important;left:auto;font-size:40px;text-decoration:none;width:24px;height:40px;color:#FFF;text-align:center;}
+.popup-banner .fancybox-close:hover {color:#DDD}
+@media screen and (min-width: 320px) and (orientation: landscape) {
+	.popup-banner .fancybox-close {bottom:auto !important;}
+}
